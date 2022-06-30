@@ -20,7 +20,7 @@
             Console.WriteLine("Do you want to continue?(Yes/No)");
             s = Console.ReadLine();
             if (s == "no")
-                Console.WriteLine("Bye!!!");
+                Console.WriteLine("Bye, Thank You!!!");
 
         } while (s == "yes");
     }

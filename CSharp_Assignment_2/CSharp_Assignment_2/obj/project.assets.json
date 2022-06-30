@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\henok\\source\\repos\\CSharp_Assignment_2\\CSharp_Assignment_2\\CSharp_Assignment_2.csproj",
+      "projectUniqueName": "C:\\Users\\henok\\Documents\\GitHub\\CSharp\\CSharp_Assignment_2\\CSharp_Assignment_2\\CSharp_Assignment_2.csproj",
       "projectName": "CSharp_Assignment_2",
-      "projectPath": "C:\\Users\\henok\\source\\repos\\CSharp_Assignment_2\\CSharp_Assignment_2\\CSharp_Assignment_2.csproj",
+      "projectPath": "C:\\Users\\henok\\Documents\\GitHub\\CSharp\\CSharp_Assignment_2\\CSharp_Assignment_2\\CSharp_Assignment_2.csproj",
       "packagesPath": "C:\\Users\\henok\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\henok\\source\\repos\\CSharp_Assignment_2\\CSharp_Assignment_2\\obj\\",
+      "outputPath": "C:\\Users\\henok\\Documents\\GitHub\\CSharp\\CSharp_Assignment_2\\CSharp_Assignment_2\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\henok\\AppData\\Roaming\\NuGet\\NuGet.Config",

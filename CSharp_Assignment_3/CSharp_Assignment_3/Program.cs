@@ -73,7 +73,10 @@ namespace CSharp_Assignment_3
     internal class Program
     {
         static void Main(string[] args)
-        {   
+        {
+            circle c = new circle();
+            Triangle t= new Triangle();
+            square s= new square();
         }
     }
 
