@@ -1,0 +1,11 @@
+C:\Users\henok\Documents\GitHub\Repository\WinApp\obj\Debug\WinApp.csproj.AssemblyReference.cache
+C:\Users\henok\Documents\GitHub\Repository\WinApp\obj\Debug\WinApp.csproj.SuggestedBindingRedirects.cache
+C:\Users\henok\Documents\GitHub\Repository\WinApp\obj\Debug\WinApp.Add_Inventory.resources
+C:\Users\henok\Documents\GitHub\Repository\WinApp\obj\Debug\WinApp.Properties.Resources.resources
+C:\Users\henok\Documents\GitHub\Repository\WinApp\obj\Debug\WinApp.csproj.GenerateResource.cache
+C:\Users\henok\Documents\GitHub\Repository\WinApp\obj\Debug\WinApp.csproj.CoreCompileInputs.cache
+C:\Users\henok\Documents\GitHub\Repository\WinApp\bin\Debug\WinApp.exe.config
+C:\Users\henok\Documents\GitHub\Repository\WinApp\bin\Debug\WinApp.exe
+C:\Users\henok\Documents\GitHub\Repository\WinApp\bin\Debug\WinApp.pdb
+C:\Users\henok\Documents\GitHub\Repository\WinApp\obj\Debug\WinApp.exe
+C:\Users\henok\Documents\GitHub\Repository\WinApp\obj\Debug\WinApp.pdb
