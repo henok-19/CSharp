@@ -14,10 +14,17 @@ namespace WinApp.Model_Item
         public string object_name { get; set; }
         public int count { get; set; }
         public double price { get; set; }
+        private static List<Item> items = new List<Item>();
 
         public string save()
         {
+            items.Add(this);
             return object_name;
+        }
+       
+        public static List<Item> getAll()
+        {
+            return items;
         }
     }
 }

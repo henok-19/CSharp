@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.label1 = new System.Windows.Forms.Label();
             this.txt_number = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -42,6 +43,10 @@
             this.btn_add = new System.Windows.Forms.Button();
             this.btn_cancel = new System.Windows.Forms.Button();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.dgv = new System.Windows.Forms.DataGridView();
+            this.errorprovider = new System.Windows.Forms.ErrorProvider(this.components);
+            ((System.ComponentModel.ISupportInitialize)(this.dgv)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorprovider)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -136,9 +141,9 @@
             // 
             // btn_add
             // 
-            this.btn_add.Location = new System.Drawing.Point(42, 317);
+            this.btn_add.Location = new System.Drawing.Point(237, 280);
             this.btn_add.Name = "btn_add";
-            this.btn_add.Size = new System.Drawing.Size(198, 55);
+            this.btn_add.Size = new System.Drawing.Size(198, 40);
             this.btn_add.TabIndex = 12;
             this.btn_add.Text = "Add";
             this.btn_add.UseVisualStyleBackColor = true;
@@ -146,9 +151,9 @@
             // 
             // btn_cancel
             // 
-            this.btn_cancel.Location = new System.Drawing.Point(246, 317);
+            this.btn_cancel.Location = new System.Drawing.Point(450, 280);
             this.btn_cancel.Name = "btn_cancel";
-            this.btn_cancel.Size = new System.Drawing.Size(198, 55);
+            this.btn_cancel.Size = new System.Drawing.Size(198, 40);
             this.btn_cancel.TabIndex = 13;
             this.btn_cancel.Text = "Cancel";
             this.btn_cancel.UseVisualStyleBackColor = true;
@@ -161,11 +166,27 @@
             this.dateTimePicker1.Size = new System.Drawing.Size(237, 22);
             this.dateTimePicker1.TabIndex = 14;
             // 
+            // dgv
+            // 
+            this.dgv.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgv.Location = new System.Drawing.Point(12, 350);
+            this.dgv.Name = "dgv";
+            this.dgv.ReadOnly = true;
+            this.dgv.RowHeadersWidth = 51;
+            this.dgv.RowTemplate.Height = 24;
+            this.dgv.Size = new System.Drawing.Size(938, 304);
+            this.dgv.TabIndex = 15;
+            // 
+            // errorprovider
+            // 
+            this.errorprovider.ContainerControl = this;
+            // 
             // Add_Inventory
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(962, 450);
+            this.ClientSize = new System.Drawing.Size(962, 666);
+            this.Controls.Add(this.dgv);
             this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.btn_cancel);
             this.Controls.Add(this.btn_add);
@@ -183,6 +204,8 @@
             this.Name = "Add_Inventory";
             this.Text = "Add_Inventory";
             this.Load += new System.EventHandler(this.Add_Inventory_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dgv)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorprovider)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -204,5 +227,7 @@
         private System.Windows.Forms.Button btn_add;
         private System.Windows.Forms.Button btn_cancel;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.DataGridView dgv;
+        private System.Windows.Forms.ErrorProvider errorprovider;
     }
 }
