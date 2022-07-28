@@ -14,9 +14,11 @@ namespace WinApp
 {
     public partial class Add_Inventory : Form
     {
-        public Add_Inventory()
+       
+        public Add_Inventory(string user)
         {
             InitializeComponent();
+            label7.Text = user;
         }
 
         private void Add_Inventory_Load(object sender, EventArgs e)
@@ -43,8 +45,9 @@ namespace WinApp
             item.object_name = txt_objectname.Text;
             item.count = Convert.ToInt32(txt_count.Text);
             item.price = Convert.ToDouble(txt_price.Text);
-           
-            //Checks if the Number entered has atleast 5 digits 
+            item.isAvailable= checkBox1.Checked;
+            
+             //Checks if the Number entered has atleast 5 digits 
             if (txt_number.Text.Length < 5)
             {
                 errorprovider.SetError(txt_number, "Digits must be 5");
@@ -66,10 +69,10 @@ namespace WinApp
             }
             
             //Validate if Object name starts with characters 
-            if (!(regex.IsMatch(txt_objectname.Text)))
-            { 
-                MessageBox.Show("Object name must start with characters");
-            }
+            //if (!(regex.IsMatch(txt_objectname.Text)))
+            //{ 
+            //    MessageBox.Show("Object name must start with characters");
+            //}
             
 
             if (flag)
@@ -86,6 +89,41 @@ namespace WinApp
         {
             this.Close();
         }
-    
+
+        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        {
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            if (rdbtn1.Checked)
+                MessageBox.Show("Simple");
+            else if (rdbtn2.Checked)
+                MessageBox.Show("Variable");
+            else
+                Console.WriteLine(" ");
+
+            string message = " ";
+            foreach(var choice in chkList.CheckedItems)
+            {
+                message += choice.ToString()+" ";
+            }
+            MessageBox.Show(message);
+        }
+
+        private void label7_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void rdbtn2_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -8,12 +8,14 @@ namespace WinApp.Model_Item
 {
     internal class Item
     {
+
         public int number { get; set; }
         public DateTime dates { get; set; }
         public int inventory_number { get; set; }
         public string object_name { get; set; }
         public int count { get; set; }
         public double price { get; set; }
+        public bool isAvailable { get; set; }
         private static List<Item> items = new List<Item>();
 
         public string save()

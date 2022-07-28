@@ -16,7 +16,7 @@ namespace WinApp
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Add_Inventory());
+            Application.Run(new Login());
         }
     }
 }
