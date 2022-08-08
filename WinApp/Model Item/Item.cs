@@ -17,6 +17,10 @@ namespace WinApp.Model_Item
         public double price { get; set; }
         public bool isAvailable { get; set; }
         private static List<Item> items = new List<Item>();
+        public static  Item findOne(string name)
+        {
+            return items.Find(i => i.object_name == name);
+        }
 
         public string save()
         {

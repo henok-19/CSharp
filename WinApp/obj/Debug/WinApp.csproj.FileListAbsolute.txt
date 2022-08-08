@@ -21,3 +21,6 @@ C:\Users\henok\Documents\GitHub\CSharp\WinApp\bin\Debug\WinApp.exe.config
 C:\Users\henok\Documents\GitHub\CSharp\WinApp\bin\Debug\WinApp.exe
 C:\Users\henok\Documents\GitHub\CSharp\WinApp\bin\Debug\WinApp.pdb
 C:\Users\henok\Documents\GitHub\CSharp\WinApp\obj\Debug\WinApp.Login.resources
+C:\Users\henok\Documents\GitHub\CSharp\WinApp\obj\Debug\WinApp.Main_Window.resources
+C:\Users\henok\Documents\GitHub\CSharp\WinApp\obj\Debug\WinApp.DisplayAllProduct.resources
+C:\Users\henok\Documents\GitHub\CSharp\WinApp\obj\Debug\WinApp.Search.resources

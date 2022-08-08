@@ -20,6 +20,10 @@ namespace WinApp
             InitializeComponent();
             label7.Text = user;
         }
+        public Add_Inventory()
+        {
+            InitializeComponent();
+        }
 
         private void Add_Inventory_Load(object sender, EventArgs e)
         {
@@ -57,6 +61,10 @@ namespace WinApp
             {
                 errorprovider.SetError(txt_objectname, "Object name is required");
             }
+            else if ((regex.IsMatch(txt_objectname.Text)))
+            {
+                errorprovider.SetError(txt_objectname, "Must start with letters");
+            }
             //Checks if count is entered
             else if (txt_count.Text.Length < 1)
             {
@@ -67,13 +75,10 @@ namespace WinApp
                 errorprovider.Clear();
                 flag = true;
             }
-            
+
             //Validate if Object name starts with characters 
-            //if (!(regex.IsMatch(txt_objectname.Text)))
-            //{ 
-            //    MessageBox.Show("Object name must start with characters");
-            //}
             
+
 
             if (flag)
             {
@@ -82,6 +87,7 @@ namespace WinApp
                 dgv.DataSource = null;
                 dgv.DataSource = Item.getAll();
             }
+
           
         }
 

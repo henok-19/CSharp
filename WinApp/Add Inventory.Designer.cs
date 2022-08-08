@@ -52,8 +52,8 @@
             this.rdbtn2 = new System.Windows.Forms.RadioButton();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.rdbtn3 = new System.Windows.Forms.RadioButton();
             this.rdbtn4 = new System.Windows.Forms.RadioButton();
+            this.rdbtn3 = new System.Windows.Forms.RadioButton();
             this.label7 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgv)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorprovider)).BeginInit();
@@ -273,17 +273,6 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Payment";
             // 
-            // rdbtn3
-            // 
-            this.rdbtn3.AutoSize = true;
-            this.rdbtn3.Location = new System.Drawing.Point(17, 22);
-            this.rdbtn3.Name = "rdbtn3";
-            this.rdbtn3.Size = new System.Drawing.Size(106, 20);
-            this.rdbtn3.TabIndex = 0;
-            this.rdbtn3.TabStop = true;
-            this.rdbtn3.Text = "On Delievery";
-            this.rdbtn3.UseVisualStyleBackColor = true;
-            // 
             // rdbtn4
             // 
             this.rdbtn4.AutoSize = true;
@@ -295,15 +284,25 @@
             this.rdbtn4.Text = "Paypal";
             this.rdbtn4.UseVisualStyleBackColor = true;
             // 
+            // rdbtn3
+            // 
+            this.rdbtn3.AutoSize = true;
+            this.rdbtn3.Location = new System.Drawing.Point(17, 22);
+            this.rdbtn3.Name = "rdbtn3";
+            this.rdbtn3.Size = new System.Drawing.Size(106, 20);
+            this.rdbtn3.TabIndex = 0;
+            this.rdbtn3.TabStop = true;
+            this.rdbtn3.Text = "On Delievery";
+            this.rdbtn3.UseVisualStyleBackColor = true;
+            // 
             // label7
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.Location = new System.Drawing.Point(13, 13);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(92, 32);
+            this.label7.Size = new System.Drawing.Size(0, 32);
             this.label7.TabIndex = 24;
-            this.label7.Text = "label7";
             // 
             // Add_Inventory
             // 
@@ -331,7 +330,9 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.txt_number);
             this.Controls.Add(this.label1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Add_Inventory";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Add_Inventory";
             this.Load += new System.EventHandler(this.Add_Inventory_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgv)).EndInit();
