@@ -57,5 +57,18 @@ namespace WinApp
                 s.Show();
             }
         }
+
+        private void displayByCustomCardToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+            var activeScreen = ActiveMdiChild;
+            if (activeScreen != null)
+            {
+                activeScreen.Close();
+                DisplayByCustom s = new DisplayByCustom();
+                s.MdiParent = this;
+                s.Show();
+            }
+        }
     }
 }

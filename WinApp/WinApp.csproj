@@ -52,11 +52,29 @@
     <Compile Include="Add Inventory.Designer.cs">
       <DependentUpon>Add Inventory.cs</DependentUpon>
     </Compile>
+    <Compile Include="CustomCard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CustomCard.Designer.cs">
+      <DependentUpon>CustomCard.cs</DependentUpon>
+    </Compile>
     <Compile Include="DisplayAllProduct.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="DisplayAllProduct.Designer.cs">
       <DependentUpon>DisplayAllProduct.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form7.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form7.Designer.cs">
+      <DependentUpon>Form7.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DisplayByCustom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DisplayByCustom.Designer.cs">
+      <DependentUpon>DisplayByCustom.cs</DependentUpon>
     </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
@@ -82,8 +100,17 @@
     <EmbeddedResource Include="Add Inventory.resx">
       <DependentUpon>Add Inventory.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="CustomCard.resx">
+      <DependentUpon>CustomCard.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="DisplayAllProduct.resx">
       <DependentUpon>DisplayAllProduct.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form7.resx">
+      <DependentUpon>Form7.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DisplayByCustom.resx">
+      <DependentUpon>DisplayByCustom.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
