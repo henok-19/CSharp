@@ -8,17 +8,22 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using WinApp2.Model_Student;
+using System.Data.SqlClient;
 
 namespace WinApp2
 {
     public partial class DisplayTabular : Form
     {
+        
         public DisplayTabular()
         {
+            
             InitializeComponent();
+            //Student student = new Student();
+            //dgv.DataSource = null;
+            //dgv.DataSource = Student.getAll();
             Student student = new Student();
-            dgv.DataSource = null;
-            dgv.DataSource = Student.getAll();
+            student.Displayall(dgv);
         }
     }
 }

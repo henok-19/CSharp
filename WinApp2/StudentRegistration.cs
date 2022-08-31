@@ -31,22 +31,8 @@ namespace WinApp2
             Regex reg = new Regex (@"^[a-zA-Z]+$");//Pattern to Check String
             Regex regi = new Regex(@"^[0-9]{5}$");
             Regex ri = new Regex(@"^[0-9] ");
-            
-            //SqlConnection con = new SqlConnection(@"Data Source=LAPTOP-TV36L87C\SQLEXPRESS;
-            //                                        Initial Catalog=Exercise;
-            //                                        Integrated Security=True");
-            //con.Open();
-            // MessageBox.Show("Succefully connected");
-            //string q = "Select * from employee ";
-            //SqlCommand cmd = new SqlCommand(q, con);
-            //var result = cmd.ExecuteReader();
-            //while (result.Read())
-            //{
-            //    string name = result[0].ToString();
-            //    MessageBox.Show(Convert.ToString(result));
-            //}
-            //con.Close();
-            // Validation to check if Id is Empty or not
+
+            //Validation to check if Id is Empty or not
             if (string.IsNullOrEmpty(txtId.Text))
             {
                 error.SetError(txtId, "ID is required");
@@ -111,12 +97,20 @@ namespace WinApp2
                     student.SchoolYear = cmbSchoolyr.SelectedItem.ToString();
                     student.Gender = rbtnFemale.Checked ? "Female" : "Male";
 
+                    int Id = Convert.ToInt32(txtId.Text);
+                    string FirstName = txtfname.Text;
+                    string LastName = txtlname.Text;
+                    string Address = txtAddress.Text;
+                    string SchoolYear = cmbSchoolyr.SelectedItem.ToString();
+                    string Gender = rbtnFemale.Checked ? "Female" : "Male";
                     txtId.Text = "";
                     txtfname.Text = "";
                     txtlname.Text = "";
                     txtAddress.Text = "";
                     //cm.Text = "";
-                    MessageBox.Show(student.save() + " has been Successfully Added!!!");
+                    student.save();
+
+                   
 
                 }
             }
